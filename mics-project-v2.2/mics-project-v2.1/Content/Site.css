@@ -1,0 +1,729 @@
+﻿/* ------------------------------ */
+/* --- CSS FOR _Layout.cshtml --- */
+/* ============================== */
+/*body {
+    font-size: 16px;
+}*/
+
+/* Set padding to keep content from hitting the edges */
+/*.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px !important;
+    text-align: justify;
+}
+
+.body-content img {
+    margin-bottom: 12px;
+}*/
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+img {
+    width: 100%;
+}
+
+.global-parameters {
+    text-align: right;
+    padding-right: 1.5em;
+}
+
+.main-header__title {
+    text-align: center;
+}
+
+.main-header__er-time {
+    font-size: 1.5em;
+    position: relative;
+    margin-top: 1em;
+}
+
+
+.main-header__hosp-name h2 {
+    font-size: 1.5em !important;
+    font-weight: normal !important;
+    margin: 0 0;
+}
+
+.er-time__left-col {
+    float: left;
+    padding: 12px 0 0 0;
+}
+
+.er-time__right-col {
+    float: right;
+    padding: 8px 8px;
+    text-align: center;
+}
+
+.navbar {
+    margin-top: 0.75em;
+}
+
+.navbar-inverse {
+    background-color: #f3f3f3 !important;
+    border-color: #e7e7e7 !important;
+}
+
+.navbar-nav a {
+    color: #666 !important;
+}
+
+.navbar-nav a:hover:not(.active) {
+    background-color: #ddd !important;
+}
+
+.navbar-nav a.active {
+    color: white !important;
+    background-color: #333 !important;
+}
+
+.navbar>.container .navbar-brand {
+    margin-left: 0 !important;
+}
+
+.left-col > div {
+    margin-bottom: 1em;
+}
+
+.left-col h3 {
+    margin-top: 0;
+}
+
+.side-title {
+    text-align:center
+}
+
+.nearest-event img {
+    float: left;
+    width: 35%;
+    margin: 4px 10px 4px 0;
+}
+
+.nearest-event {
+    text-align: justify;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+}
+
+.top-features {
+    padding: 12px 4px;
+    font-size: 1.125em !important;
+    border: 1px solid #ccc;
+}
+
+.top-features .glyphicon {
+    font-size: 20px !important;
+}
+
+.top-features .row {
+    padding: 8px 0;
+    border: 1px solid #ccc;
+    margin: 4px 0;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 8px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0 0;
+}
+
+.footer-nav {
+    margin-top: 20px;
+}
+
+.footer-section {
+    border-top: 1px solid #ccc;
+    margin-top: 32px;
+    padding-top: 16px;
+}*/
+
+
+/* --------------------------------- */
+/* --- CSS FOR _NewLayout.cshtml --- */
+/* ================================= */
+body {
+    font-size: 16px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px !important;
+    text-align: justify;
+}
+
+.body-content img {
+    margin-bottom: 12px;
+}
+
+hr {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+h2 {
+    margin-top: 4px !important;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    margin-top: 60px;
+}
+
+.global-parameters {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 10;
+    text-align: right;
+    padding-right: 1.5em;
+    margin-bottom: 16px;
+    padding: 4px 4px;
+    background-color: rgba(234, 224, 200, 0.9);
+    -webkit-box-shadow: 0 8px 6px -6px #c0c0c0;
+     -moz-box-shadow: 0 8px 6px -6px #c0c0c0;
+          box-shadow: 0 8px 6px -6px #c0c0c0;
+}
+
+.global-parameters .container {
+    position: relative;
+}
+
+.search-bar {
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 2em;
+}
+
+.search-bar input {
+    width: 175px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url('../Images/searchicon.png');
+    background-position: 8px 4px; 
+    background-repeat: no-repeat;
+    padding: 4px 20px 4px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-bar input:focus {
+    width: 100%;
+}
+
+.global-parameters a {
+    color: #337ab7 !important;
+}
+
+.global-parameters .glyphicon {
+    color: #337ab7 !important;
+}
+
+.dropbtn {
+    font-size: 14px;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+}
+/*Nav bar: #1397d7 */
+/* Grey: #e7e7e7 */
+/* Light green: #57d900 */
+/* Light blue: #4db8db */
+.fa {
+    font-size:18px !important;
+    font-weight: bold !important;
+    padding: 0 2px;
+    /*color: #4db8db;*/
+}
+
+.hospital-dropdown {
+    color: #337ab7;
+    position: relative;
+    display: inline-block;
+}
+
+.no-bullet {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.global-parameters__login {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 4px 2px;
+}
+
+.dropdown-admin {
+    min-width: 200px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 4px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.hospital-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hospital-dropdown:hover .dropbtn {
+    /*background-color: #4db8db;*/
+    /*color: black;*/
+    /*border-radius: 5px 5px;*/
+    text-decoration: underline;
+}
+
+.menu-divider {
+    margin: 2px 4px;
+    border: 1px solid rgba(132,200,23,0.7);
+}
+
+.main-header__title {
+    text-align: center;
+    padding: 2.5em 0 0 0;
+}
+
+.main-header__er-time {
+    font-size: 1.5em;
+    position: relative;
+    margin-top: 1em;
+}
+
+.main-header__hosp-name h2 {
+    font-weight: normal !important;
+    margin: 0 0;
+}
+
+.er-time__left-col {
+    float: left;
+    padding: 12px 0 0 0;
+}
+
+.er-time__right-col {
+    float: right;
+    padding: 8px 8px;
+    text-align: center;
+}
+
+.navbar {
+    margin-top: 0.75em;
+    padding: 2px 0;
+}
+
+.navbar-inverse {
+    background-color: #1397d7 !important;
+    border-color: #4db8db !important;
+}
+
+.navbar-nav > li > a {
+    color: #fff !important;
+}
+
+.navbar-nav a:hover:not(.active) {
+    color: #1397d7 !important;
+    background-color: #fff !important;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav a.active {
+    color: #1397d7 !important;
+    background-color: #4db8db !important;
+    border-radius: 3px;
+}
+
+.navbar-nav>.open>a {
+    background-color: #4db8db !important;
+    border-radius: 3px;
+}
+
+.navbar-nav>.open>a:hover {
+    color: #fff !important;
+    background-color: #4db8db !important;
+}
+
+/* Dark grey color for text */
+/* Blood color: #da4839 */
+/* Green color: #84c817 */
+li.donate-button {
+    position: relative;
+    margin-top: 4px;
+    text-align: center;
+}
+
+li.donate-button > a {
+    background-color: #fff;
+    border: 3px solid #84c817;
+    color: #616d7b !important;
+    font-weight: bold;
+    border-radius: 10px 10px;
+    padding: 6px 12px !important;
+}
+
+li.donate-button > a:hover {
+    border-radius: 10px 10px !important;
+}
+
+.blood-drop {
+    /*color: #da4839;*/
+    color:  #85bb65;
+    /*position: absolute;
+    z-index: 5;
+    left: 12px;
+    top: -5px;*/
+}
+
+.navbar>.container .navbar-brand {
+    margin-left: 0 !important;
+}
+
+.left-col > div {
+    margin-bottom: 1.25em;
+    padding-bottom: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.left-col h3 {
+    margin-top: 0;
+    color: #616d7b;
+    font-size: 1.3em;
+    padding: 8px 6px;
+    background: linear-gradient(to right, rgba(132,200,23,0.3), rgba(132,200,23,0.8));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.side-title {
+    text-align:center
+}
+
+.nearest-event img {
+    float: left;
+    width: 35%;
+    margin: 4px 10px 4px 0;
+}
+
+.nearest-event {
+    text-align: justify;
+    /*padding: 12px 0;*/
+    border: 1px solid #ccc;
+}
+
+.nearest-event__detail {
+    padding: 4px 16px;
+}
+
+.nearest-event__more {
+    text-align: right;
+    padding: 4px 12px 0 12px;
+}
+
+.nearest-event__more button {
+    color: #fff;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 5px 5px;
+    background-color: #84c817;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    transition: all 0.3s ease-in-out;
+}
+
+.nearest-event__more button:hover {
+    background-color: #1397d7;
+}
+
+.top-features {
+    font-size: 1.125em !important;
+}
+
+.top-features > div {
+    padding: 0 12px;
+}
+
+.top-features__icon {
+    border-right: 1px solid #ccc;
+}
+
+.top-features .glyphicon {
+    font-size: 20px !important;
+    color: #1397d7;
+}
+
+.top-features .row {
+    padding: 8px 0;
+    border: 1px solid #ccc;
+    margin: 4px 0;
+}
+
+.top-features__link {
+    margin-top: 4px;
+}
+
+.top-features a {
+    color: #616d7b;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-features a:hover {
+    color: #1397d7;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 8px 0;
+    text-align: center;
+    /*border-top: 1px solid #ccc;*/
+    background-color: rgba(234, 224, 200, 0.8);
+}
+
+footer p {
+    margin: 0 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer-nav {
+    margin-top: 30px;
+}
+
+.mics-footer {
+    background-color: rgba(204, 204, 204, 0.6);
+    padding: 1em 1em;
+}
+
+.mics-footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.mics-footer a {
+    font-size: 12px;
+}
+
+.hospital-about {
+    text-align: justify;
+    padding: 0 12px;
+}
+
+img.hospital-thumbnail {
+    width: 45% !important;
+    height: auto;
+    float: left;
+    margin-right: 12px;
+}
+
+
+/* --- Responsive Design Views --- */
+/* ------------------------------- */
+@media all and (min-width:992px) {
+    div.top-features__icon {
+        width: 18% !important;
+    }
+    div.top-features__link {
+        width: 82% !important;
+    }
+}
+
+@media all and (max-width:991px) {
+    img.hospital-thumbnail {
+        width: 60% !important;
+    }
+    .main-header__logo {
+        text-align: center;
+    }
+    .navbar-brand {
+        font-size: 16px !important;
+    }
+    .navbar-right {
+        margin-right: 42px !important;
+        margin-bottom: 8px !important;
+    }
+    .top-features {
+        text-align: center;
+    }
+    .top-features__icon {
+        border-right: none;
+    }
+    .nearest-event img {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media all and (max-width:767px) {
+    .main-header__logo img {
+        width: 50% !important;
+    }
+    .main-header__er-time {
+        padding-top: 0.5em;
+        display: block;
+        width: 40%;
+        margin: auto;
+    }
+    .donate-button {
+        width: 25%;
+        position: absolute;
+        margin-left: 1em;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #fff !important;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: #1397d7 !important;
+    }
+    .left-col {
+        margin-top: 2em;
+    }
+    .left-col>div.row {
+        display: block !important;
+        width: 45% !important;
+        float: left;
+        margin: 0 1em !important;
+    }
+    .top-features>div>div.row {
+        margin-bottom: 14px;
+    }
+    .nearest-event img {
+        width: 45%;
+    }
+    .footer-nav {
+        display: none;
+    }
+    .mics-footer {
+        margin-top: 2.5em;
+    }
+}
+
+@media all and (max-width:700px) {
+    .main-header__er-time {
+        width: 50%;
+    }
+    .left-col {
+        margin: 2em auto;
+        text-align: center;
+    }
+    .left-col>div.row {
+        margin: 0 0.75em !important;
+    }
+}
+
+@media all and (max-width:665px) {
+    .navbar-nav>li.dropdown>a {
+        display: block;
+        width: 100% !important;
+    }
+    .donate-button {
+        width: 30%;
+    }
+}
+
+@media all and (max-width:590px) {
+    .top-features {
+        font-size: 1em !important;
+    }
+    .donate-button {
+        width: 35%;
+    }
+}
+
+@media all and (max-width:540px) {
+    span.selected-hosital {
+        position: fixed;
+        left: -10000px;
+    }
+}
+
+@media all and (max-width:500px) {
+    .main-header__er-time {
+        width: 75%;
+    }
+    img.hospital-thumbnail {
+        width: 100% !important;
+        margin-bottom: 1em;
+    }
+    .donate-button {
+        width: 45%;
+    }
+    .left-col {
+        font-size: 1.25em;
+    }
+    .nearest-event__detail {
+        font-size: 0.9em;
+    }
+    .left-col>div.row {
+        width: 80% !important;
+        margin: 0 10% 5% 10% !important;
+    }
+}
+
+@media all and (max-width:420px) {
+    .main-header__logo img {
+        width: 75% !important;
+    }
+    .donate-button {
+        width: 50%;
+    }
+    h2 {
+        font-size: 24px !important;
+    }
+    .nearest-event img {
+        width: 100% !important;
+    }
+    .mics-footer {
+        position: fixed;
+        left: -10000px;
+    }
+}
+
+@media all and (max-width:374px) {
+    .donate-button {
+        width: 60%;
+    }
+    .left-col>div.row {
+        width: 100% !important;
+        margin: 0 0 10% 0 !important;
+    }
+}

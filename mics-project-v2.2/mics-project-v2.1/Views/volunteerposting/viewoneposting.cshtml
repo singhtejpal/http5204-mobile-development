@@ -1,0 +1,59 @@
+﻿@*@model IEnumerable<mics_project_v2._1.Models.tbl_volunteer_posting>*@
+@model mics_project_v2._1.Models.tbl_volunteer_posting
+
+@{
+    ViewBag.Title = "viewoneposting";
+}
+
+<h2>Posting</h2>
+<div class="section">
+    <div class="row" style="height:400px;">
+        @*<div class="col-sm-1"></div>*@
+        <div class="col-sm-12">
+            @*@foreach (var item in Model)
+            {
+                <h1>@item.title</h1>
+                <p>@item.content</p>
+            }*@
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th><h1>@Model.title</h1></th>
+                </tr>
+                @*<tr>
+                    <td>@Model.content</td>
+                </tr>*@
+                <tr>
+                    <td>@Html.Raw(Model.content)</td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Apply Now", "Create", "volunteer_application", new { id = Model.Id }, htmlAttributes: new { @class = "btn btn-default" })
+                    </td>
+                </tr>
+            </table>
+            @*<h1>@Model.title</h1>
+            <p>@Model.content</p>*@
+
+            @*<h1>Application for receptionist volunteer post</h1>
+            <p>
+                In our hospital, we need one female volunteer for reception. The volunteer applicant should be a good communicator.
+                Timings will be discussed in first meeting. An applicant must be well behaving person.
+            </p>
+            <p>Interesting applicants can apply by just clicking on following button.</p>*@
+           
+        </div>
+        @*<div class="col-sm-1"></div>*@
+    </div>
+
+    <div class="col-sm-1"></div>
+    
+    <div class="col-sm-8">
+        
+        @*<button type="button" class="btn btn-default" onclick="location.href='@Url.Action("Create","volunteer_application")'">Apply</button>*@
+    </div>
+    
+    <div class="col-sm-1">
+    </div>
+
+    <br /><br /><br /><br />
+</div>

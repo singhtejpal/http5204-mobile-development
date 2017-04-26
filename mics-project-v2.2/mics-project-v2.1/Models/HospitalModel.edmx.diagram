@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="070adb90da874ff38bfdd1a12039b30c" Name="Diagram1">
+        <EntityTypeShape EntityType="HospitalDatabaseModel.tbl_admin" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDatabaseModel.tbl_newsletter" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDatabaseModel.tbl_primary_nav" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDatabaseModel.tbl_volunteer_application" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="HospitalDatabaseModel.FK_tbl_newsletter_admin" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDatabaseModel.FK_tbl_primary_nav_admin" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HospitalDatabaseModel.tbl_volunteer_posting" Width="1.5" PointX="3" PointY="7.5" />
+        <AssociationConnector Association="HospitalDatabaseModel.FK_tbl_volunteer_posting_tbl_admin" />
+        <AssociationConnector Association="HospitalDatabaseModel.FK_tbl_volunt_appli_tbl_volunt_posting" />
+        <AssociationConnector Association="HospitalDatabaseModel.FK_tbl_volunteer_posting_Toadmin" />
+        <EntityTypeShape EntityType="HospitalDatabaseModel.tbl_page" Width="1.5" PointX="3" PointY="11.75" />
+        <AssociationConnector Association="HospitalDatabaseModel.FK_tbl_page_adminid_tbl_admin_id" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

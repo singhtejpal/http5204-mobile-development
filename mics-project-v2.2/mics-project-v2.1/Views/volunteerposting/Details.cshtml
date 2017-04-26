@@ -1,0 +1,53 @@
+﻿@model mics_project_v2._1.Models.tbl_volunteer_posting
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Volunteer Posting Detail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.content)
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.content)
+            @*@Html.DisplayFor(model => model.content)*@
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.date_created)*@
+            @Html.DisplayName("Today Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_created)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.tbl_admin.first_name)*@
+            @Html.DisplayName("Created By")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_admin.first_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

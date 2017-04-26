@@ -1,0 +1,30 @@
+﻿@model mics_project_v2._1.Models.tbl_newsletter
+
+@{
+    ViewBag.Title = "ViewOneNewsletter";
+}
+
+<h2>View Newsletter</h2>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-11" style="border:1px solid #fff;">
+            <h3>@Model.heading</h3>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-7" style="border:1px solid #ccc;">
+            <p>@Html.Raw(Model.content)</p>
+        </div>
+        @*<div class="col-sm-1"></div>*@
+        <div class="col-sm-3">
+            <img src="~/images/@Html.DisplayFor(model=>model.image)" style="width:150px; height:100px; border:10px solid #eee; " alt="image" />
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+</div>
