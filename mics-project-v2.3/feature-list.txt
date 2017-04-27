@@ -1,0 +1,51 @@
+Newsletter feature
+	index ++
+	create => admin ++
+	read =>admin ++
+	update => admin ++
+	detail => admin ++
+	delete => admin ++
+	view => public
+
+Create
+	heading ++
+	content ++
+	image ++
+	admin_id ++
+
+Read
+	heading ++
+	content ++
+
+Edit
+	heading ++
+	content ++
+	image => does not show existing image
+	admin_id ++
+
+Deatail
+	heading ++
+	content ++
+	image => does not show image only show path
+	admin_id ++
+	
+Delete
+	heading ++
+	content ++
+	image working ++
+	admin_id ++
+	
+
+	
+<script type="text/javascript" src="tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" language="javascript">
+	tinyMCE.init({
+		// General options
+		mode: "textareas",
+		theme: "advanced",
+		plugins: "pagebreak,style,layer,table,save,
+		advhr,advimage,advlink,emotions,iespell,inlinepopups",
+	   
+	});
+</script>
+classics staffing

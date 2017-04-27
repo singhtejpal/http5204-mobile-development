@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HospitalDatabaseModelStoreContainer" CdmEntityContainer="HospitalDatabaseContext">
+    <EntitySetMapping Name="tbl_admin">
+      <EntityTypeMapping TypeName="HospitalDatabaseModel.tbl_admin">
+        <MappingFragment StoreEntitySet="tbl_admin">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_newsletter">
+      <EntityTypeMapping TypeName="HospitalDatabaseModel.tbl_newsletter">
+        <MappingFragment StoreEntitySet="tbl_newsletter">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="heading" ColumnName="heading" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_primary_nav">
+      <EntityTypeMapping TypeName="HospitalDatabaseModel.tbl_primary_nav">
+        <MappingFragment StoreEntitySet="tbl_primary_nav">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_volunteer_application">
+      <EntityTypeMapping TypeName="HospitalDatabaseModel.tbl_volunteer_application">
+        <MappingFragment StoreEntitySet="tbl_volunteer_application">
+          <ScalarProperty Name="posting_id" ColumnName="posting_id" />
+          <ScalarProperty Name="Is_agree" ColumnName="Is_agree" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="full_name" ColumnName="full_name" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_volunteer_posting">
+      <EntityTypeMapping TypeName="HospitalDatabaseModel.tbl_volunteer_posting">
+        <MappingFragment StoreEntitySet="tbl_volunteer_posting">
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_page">
+      <EntityTypeMapping TypeName="HospitalDatabaseModel.tbl_page">
+        <MappingFragment StoreEntitySet="tbl_page">
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

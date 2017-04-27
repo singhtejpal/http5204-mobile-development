@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - MICs Group of Health Services</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    @RenderSection("styles", false)
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="global-parameters">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" name="search" placeholder="Search..." />
+            </div>
+
+            <!-- Hospital selection -->
+            <div class="hospital-dropdown">
+                <div class="dropbtn">
+                    <span class="fa fa-h-square"></span>
+                    <span class="selected-hosital">Bingham Memorial Hospital</span>
+                    <span class="caret"></span>
+                </div>
+                <div class="dropdown-content">
+                    <a class="hospital" href="#">Bingham Memorial Hospital</a>
+                    <a class="hospital" href="#">Anson General Hospital</a>
+                    <a class="hospital" href="#">Lady Minto Hospital</a>
+                </div>
+            </div>
+
+            <!-- User Menu Links -->
+            <div class="global-parameters__login">
+                <ul class="no-bullet">
+                    <li><a href="@Url.Action("Login", "Account")"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 main-header__logo">
+                    <a href="/">
+                        <img src="~/Images/logo3.png" alt="MICs Group of Health Services Logo" />
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-8 main-header__title">
+                    <div class="main-header__hosp-name"><h2>Bingham Memorial Hospital</h2></div>
+                    <div>Disclaimer: This is a fake website developed as part of a school project.<br />If you have any emergency, please call <strong>911</strong>.</div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-3 main-header__er-time">
+                    <div class="er-time__left-col"><span class="glyphicon glyphicon-time"></span></div>
+                    <div class="er-time__right-col">
+                        <div>Emergency Wait Time</div>
+                        <div>00 : 00 : 00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                       <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="">Patients &amp; Visitors <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Find a Doctor", "Index", "Doctors", new { area = "" }, new { @class = "navbar-link" })</li>
+                            <li><a class="navbar-link" href="">Hospital Map</a></li>
+                            <li>@Html.ActionLink("Request an Appointment", "OnlineRequest", "Appointments", new { area = "" }, new { @class = "navbar-link" })</li>
+                            <li><a class="navbar-link" href="">Gift Shop</a></li>
+                            <li><a class="navbar-link" href="">Get Well Messages</a></li>
+                            <li><a class="navbar-link" href="">Your Hospital Stay</a></li>
+                            <li><a class="navbar-link" href="">Visiting Hours</a></li>
+                            <li><a class="navbar-link" href="">Parking</a></li>
+                            <li><a class="navbar-link" href="">Rights &amp; Responsibilities</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="">Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navbar-link" href="">Medical Clinics</a></li>
+                            <li><a class="navbar-link" href="">Laboratory</a></li>
+                            <li><a class="navbar-link" href="">Diagnostic Imaging</a></li>
+                            <li><a class="navbar-link" href="">Clinical Nutrition</a></li>
+                            <li><a class="navbar-link" href="">Diabetes Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="">Careers <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navbar-link" href="">Employment Opportunities</a></li>
+                            <li><a class="navbar-link" href="">Recruitment</a></li>
+                            <li><a class="navbar-link" href="">Hiring Policy</a></li>
+                            <li>@Html.ActionLink("Volunteer Application", "listallposting", "volunteerposting", new { area = "" }, new { @class = "navbar-link" })</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="">News &amp; Events <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navbar-link" href="">Events Listing</a></li>
+                            <li><a class="navbar-link" href="">Community &amp; Health Blog</a></li>
+                            <li>@Html.ActionLink("Newsletter","ViewAllNewsletters","newsletter",new { area=""},new { @class="navbar-link"}) </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="">About Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navbar-link" href="">Contact</a></li>
+                            <li><a class="navbar-link" href="">Testimonials</a></li>
+                            <li><a class="navbar-link" href="">Feedback Form</a></li>
+                            <li><a class="navbar-link" href="">FAQ</a></li>
+                            <li><a class="navbar-link" href="">Board of Directors</a></li>
+                            <li><a class="navbar-link" href="">Comminuty Advisory Council</a></li>
+                            <li><a class="navbar-link" href="">Accountability</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="donate-button">
+                        <a href="@Url.Action("Index", "Donations")"><span class="fa fa-usd blood-drop" aria-hidden="true"></span> DONATE NOW</a>
+                    </li>
+                    @*<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-sm-push-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-sm-pull-9 left-col">
+                <!-- Most Used Features -->
+                <div class="row top-features">
+                    <h3 class="side-title">New Features</h3>
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-2 top-features__icon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </div>
+                            <div class="col-md-12 col-lg-10 top-features__link">
+                                @Html.ActionLink("Request an Appointment", "OnlineRequest", "Appointments")
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-12 top-features__icon">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </div>
+                            <div class="col-lg-10 col-md-12 top-features__link">
+                                @Html.ActionLink("Find a Doctor", "Index", "Doctors")
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-12 top-features__icon">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </div>
+                            <div class="col-lg-10 col-md-12 top-features__link">
+                                <a href="">Send Get Well Messages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upcoming Events Block -->
+                <div class="row nearest-event">
+                    <h3 class="side-title">Upcoming Events</h3>
+                    <div class="nearest-event__detail">
+                        <img src="~/Images/logo3.png" alt="Event thumbnail" />
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de
+                        Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914
+                        translation by H. Rackham.
+                    </div>
+                    <div class="nearest-event__more">
+                        <button type="button" title="Click to view more upcoming events">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-inverse footer-nav">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        @*<a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="">Patients &amp; Visitors <span class="caret"></span></a>*@
+                        @Html.Action("test", "page")
+                        <ul class="dropdown-menu">
+                            @*<li>@Html.ActionLink("Find a Doctor", "Index", "Doctors", new { area = "" }, new { @class = "navbar-link" })</li>
+                            <li><a class="navbar-link" href="">Hospital Map</a></li>
+                            <li>@Html.ActionLink("Request an Appointment", "OnlineRequest", "Appointments", new { area = "" }, new { @class = "navbar-link" })</li>
+                            <li><a class="navbar-link" href="">Gift Shop</a></li>
+                            <li><a class="navbar-link" href="">Get Well Messages</a></li>
+                            <li><a class="navbar-link" href="">Your Hospital Stay</a></li>
+                            <li><a class="navbar-link" href="">Visiting Hours</a></li>
+                            <li><a class="navbar-link" href="">Parking</a></li>
+                            <li><a class="navbar-link" href="">Rights &amp; Responsibilities</a></li>*@
+                        </ul>
+                    </li>
+                    @*<li class="dropdown">
+                        <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="">Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navbar-link" href="">Medical Clinics</a></li>
+                            <li><a class="navbar-link" href="">Laboratory</a></li>
+                            <li><a class="navbar-link" href="">Diagnostic Imaging</a></li>
+                            <li><a class="navbar-link" href="">Clinical Nutrition</a></li>
+                            <li><a class="navbar-link" href="">Diabetes Program</a></li>
+                        </ul>
+                    </li>*@
+                    @*<li class="dropdown">
+                        <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="">Careers <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navbar-link" href="">Employment Opportunities</a></li>
+                            <li><a class="navbar-link" href="">Recruitment</a></li>
+                            <li><a class="navbar-link" href="">Hiring Policy</a></li>
+                            <li>@Html.ActionLink("Volunteer Applications", "listallpostings", "volunteerposting", new { area = "" }, new { @class = "navbar-link" })</li>
+                        </ul>
+                    </li>*@
+                    @*<li class="dropdown">
+                        <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="">News &amp; Events <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navbar-link" href="">Events Listing</a></li>
+                            <li><a class="navbar-link" href="">Community &amp; Health Blog</a></li>
+                        </ul>
+                    </li>*@
+                    @*<li class="dropdown">
+                        <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="">About Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="navbar-link" href="">Contact</a></li>
+                            <li><a class="navbar-link" href="">Testimonials</a></li>
+                            <li><a class="navbar-link" href="">Feedback Form</a></li>
+                            <li><a class="navbar-link" href="">FAQ</a></li>
+                            <li><a class="navbar-link" href="">Board of Directors</a></li>
+                            <li><a class="navbar-link" href="">Comminuty Advisory Council</a></li>
+                            <li><a class="navbar-link" href="">Accountability</a></li>
+                        </ul>
+                    </li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mics-footer">
+            <div class="col-xs-6 col-sm-3 footer-links">
+                <ul>
+                    <li><a href="#">Governance & Accountability</a></li>
+                    <li><a href="#">Accreditation</a></li>
+                    <li><a href="#">Annual Report</a></li>
+                    <li><a href="#">Board of Directors</a></li>
+                    <li><a href="#">MICs Board Meetings</a></li>
+                    <li><a href="#">Expense Directive</a></li>
+                    <li><a href="#">CEO & Executive Team Expenses</a></li>
+                    <li><a href="#">Financial Statements</a></li>
+                    <li><a href="#">Quality & Risk Management</a></li>
+                    <li><a href="#">Ethics</a></li>
+                    <li><a href="#">Accountability</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 footer-links">
+                <ul>
+                    <li><a href="#">Privacy & Confidentiality</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Personal Information FAQ</a></li>
+                    <li><a href="#">Freedom of Information & Protection of Privacy</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 footer-links">
+                <ul>
+                    <li><a href="#">Accessibility Plan</a></li>
+                    <li><a href="#">Quality Plan</a></li>
+                    <li><a href="#">Annual Report</a></li>
+                    <li><a href="#">Energy Plan</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 footer-links">
+                <ul>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Patient Safety</a></li>
+                    <li><a href="#">Partners/Link</a></li>
+                    <li><a href="#">Hospital Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; @DateTime.Now.Year Codebusters - MICs Group of Health Services</p>
+    </footer>
+
+    @RenderSection("Scripts", false)
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿@model IEnumerable<mics_project_v2._1.Models.tbl_page>
+
+@*@{
+    ViewBag.Title = "_NavPartial";
+}*@
+
+@*<h2>_NavPartial</h2>*@
+
+@foreach (var item in Model)
+{
+    @*<li class="navbar-link">@Html.DisplayFor(m => item.name)</li>*@
+    @Html.ActionLink(item.name, "action name", "page", null, htmlAttributes: new { @class = "navbar-brand" })
+}
